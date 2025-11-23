@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A41C5D2A2ED0D46100C44E2B /* SMS Protection Filter.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A41C5D232ED0D46000C44E2B /* SMS Protection Filter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A41C5D4D2ED111ED00C44E2B /* model.onnx in Resources */ = {isa = PBXBuildFile; fileRef = A41C5D4C2ED111ED00C44E2B /* model.onnx */; };
+		A41C5D4E2ED111ED00C44E2B /* model.onnx in Resources */ = {isa = PBXBuildFile; fileRef = A41C5D4C2ED111ED00C44E2B /* model.onnx */; };
+		A41C5D532ED1133800C44E2B /* onnxruntime in Frameworks */ = {isa = PBXBuildFile; productRef = A41C5D522ED1133800C44E2B /* onnxruntime */; };
+		A41C5D582ED1137900C44E2B /* onnxruntime in Frameworks */ = {isa = PBXBuildFile; productRef = A41C5D572ED1137900C44E2B /* onnxruntime */; };
+		A41C5D5B2ED1170A00C44E2B /* model.onnx in Resources */ = {isa = PBXBuildFile; fileRef = A41C5D4C2ED111ED00C44E2B /* model.onnx */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A41C5CF92ED0A5DA00C44E2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +30,60 @@
 			remoteGlobalIDString = A41C5CEA2ED0A5D700C44E2B;
 			remoteInfo = "SMS Protection";
 		};
+		A41C5D282ED0D46100C44E2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41C5CE32ED0A5D700C44E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A41C5D222ED0D46000C44E2B;
+			remoteInfo = "SMS Protection Filter";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A41C5D2F2ED0D46100C44E2B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A41C5D2A2ED0D46100C44E2B /* SMS Protection Filter.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A41C5CEB2ED0A5D700C44E2B /* SMS Protection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Protection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41C5CF82ED0A5DA00C44E2B /* SMS ProtectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMS ProtectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41C5D022ED0A5DA00C44E2B /* SMS ProtectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMS ProtectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41C5D232ED0D46000C44E2B /* SMS Protection Filter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SMS Protection Filter.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41C5D4C2ED111ED00C44E2B /* model.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.onnx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A41C5D2B2ED0D46100C44E2B /* Exceptions for "SMS Protection Filter" folder in "SMS Protection Filter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A41C5D222ED0D46000C44E2B /* SMS Protection Filter */;
+		};
+		A41C5D322ED0D78100C44E2B /* Exceptions for "SMS Protection" folder in "SMS Protection Filter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ONNXInference.swift,
+			);
+			target = A41C5D222ED0D46000C44E2B /* SMS Protection Filter */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A41C5CED2ED0A5D700C44E2B /* SMS Protection */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A41C5D322ED0D78100C44E2B /* Exceptions for "SMS Protection" folder in "SMS Protection Filter" target */,
+			);
 			path = "SMS Protection";
 			sourceTree = "<group>";
 		};
@@ -45,6 +97,14 @@
 			path = "SMS ProtectionUITests";
 			sourceTree = "<group>";
 		};
+		A41C5D242ED0D46000C44E2B /* SMS Protection Filter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A41C5D2B2ED0D46100C44E2B /* Exceptions for "SMS Protection Filter" folder in "SMS Protection Filter" target */,
+			);
+			path = "SMS Protection Filter";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41C5D532ED1133800C44E2B /* onnxruntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +130,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A41C5D202ED0D46000C44E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41C5D582ED1137900C44E2B /* onnxruntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +147,10 @@
 				A41C5CED2ED0A5D700C44E2B /* SMS Protection */,
 				A41C5CFB2ED0A5DA00C44E2B /* SMS ProtectionTests */,
 				A41C5D052ED0A5DA00C44E2B /* SMS ProtectionUITests */,
+				A41C5D242ED0D46000C44E2B /* SMS Protection Filter */,
 				A41C5CEC2ED0A5D700C44E2B /* Products */,
+				A41C5D4C2ED111ED00C44E2B /* model.onnx */,
+				A41C5D562ED1137800C44E2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +160,16 @@
 				A41C5CEB2ED0A5D700C44E2B /* SMS Protection.app */,
 				A41C5CF82ED0A5DA00C44E2B /* SMS ProtectionTests.xctest */,
 				A41C5D022ED0A5DA00C44E2B /* SMS ProtectionUITests.xctest */,
+				A41C5D232ED0D46000C44E2B /* SMS Protection Filter.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A41C5D562ED1137800C44E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,16 +182,19 @@
 				A41C5CE72ED0A5D700C44E2B /* Sources */,
 				A41C5CE82ED0A5D700C44E2B /* Frameworks */,
 				A41C5CE92ED0A5D700C44E2B /* Resources */,
+				A41C5D2F2ED0D46100C44E2B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A41C5D292ED0D46100C44E2B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A41C5CED2ED0A5D700C44E2B /* SMS Protection */,
 			);
 			name = "SMS Protection";
 			packageProductDependencies = (
+				A41C5D522ED1133800C44E2B /* onnxruntime */,
 			);
 			productName = "SMS Protection";
 			productReference = A41C5CEB2ED0A5D700C44E2B /* SMS Protection.app */;
@@ -163,6 +246,29 @@
 			productReference = A41C5D022ED0A5DA00C44E2B /* SMS ProtectionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A41C5D222ED0D46000C44E2B /* SMS Protection Filter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A41C5D2C2ED0D46100C44E2B /* Build configuration list for PBXNativeTarget "SMS Protection Filter" */;
+			buildPhases = (
+				A41C5D1F2ED0D46000C44E2B /* Sources */,
+				A41C5D202ED0D46000C44E2B /* Frameworks */,
+				A41C5D212ED0D46000C44E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A41C5D242ED0D46000C44E2B /* SMS Protection Filter */,
+			);
+			name = "SMS Protection Filter";
+			packageProductDependencies = (
+				A41C5D572ED1137900C44E2B /* onnxruntime */,
+			);
+			productName = "SMS Protection Filter";
+			productReference = A41C5D232ED0D46000C44E2B /* SMS Protection Filter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +290,9 @@
 						CreatedOnToolsVersion = 26.1.1;
 						TestTargetID = A41C5CEA2ED0A5D700C44E2B;
 					};
+					A41C5D222ED0D46000C44E2B = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 				};
 			};
 			buildConfigurationList = A41C5CE62ED0A5D700C44E2B /* Build configuration list for PBXProject "SMS Protection" */;
@@ -195,6 +304,9 @@
 			);
 			mainGroup = A41C5CE22ED0A5D700C44E2B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A41C5D512ED112B600C44E2B /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A41C5CEC2ED0A5D700C44E2B /* Products */;
 			projectDirPath = "";
@@ -203,6 +315,7 @@
 				A41C5CEA2ED0A5D700C44E2B /* SMS Protection */,
 				A41C5CF72ED0A5DA00C44E2B /* SMS ProtectionTests */,
 				A41C5D012ED0A5DA00C44E2B /* SMS ProtectionUITests */,
+				A41C5D222ED0D46000C44E2B /* SMS Protection Filter */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41C5D4E2ED111ED00C44E2B /* model.onnx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41C5D5B2ED1170A00C44E2B /* model.onnx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41C5D212ED0D46000C44E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41C5D4D2ED111ED00C44E2B /* model.onnx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +376,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A41C5D1F2ED0D46000C44E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = A41C5CEA2ED0A5D700C44E2B /* SMS Protection */;
 			targetProxy = A41C5D032ED0A5DA00C44E2B /* PBXContainerItemProxy */;
+		};
+		A41C5D292ED0D46100C44E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A41C5D222ED0D46000C44E2B /* SMS Protection Filter */;
+			targetProxy = A41C5D282ED0D46100C44E2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,11 +530,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SMS Protection/SMS Protection.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G64X4LJMLZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TextBuddy;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -427,11 +564,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SMS Protection/SMS Protection.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G64X4LJMLZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TextBuddy;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -538,6 +677,64 @@
 			};
 			name = Release;
 		};
+		A41C5D2D2ED0D46100C44E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SMS Protection Filter/SMS Protection Filter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G64X4LJMLZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SMS Protection Filter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SMS Protection Filter";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bdcapps.SMS-Protection.SMS-Protection-Filter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A41C5D2E2ED0D46100C44E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SMS Protection Filter/SMS Protection Filter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G64X4LJMLZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SMS Protection Filter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SMS Protection Filter";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bdcapps.SMS-Protection.SMS-Protection-Filter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,7 +774,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A41C5D2C2ED0D46100C44E2B /* Build configuration list for PBXNativeTarget "SMS Protection Filter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41C5D2D2ED0D46100C44E2B /* Debug */,
+				A41C5D2E2ED0D46100C44E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A41C5D512ED112B600C44E2B /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/onnxruntime-swift-package-manager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A41C5D522ED1133800C44E2B /* onnxruntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A41C5D512ED112B600C44E2B /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */;
+			productName = onnxruntime;
+		};
+		A41C5D572ED1137900C44E2B /* onnxruntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A41C5D512ED112B600C44E2B /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */;
+			productName = onnxruntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A41C5CE32ED0A5D700C44E2B /* Project object */;
 }
